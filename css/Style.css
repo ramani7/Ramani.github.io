@@ -1,0 +1,234 @@
+﻿body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f4f4;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	
+	background-image: url('../images/pink purple gradient minimalist opening youtube intro.gif');
+	background-size: cover; /* Ensure the background covers the entire viewport */
+	background-position: center; /* Center the background image */
+	background-attachment: fixed; /* Keep the background fixed while scrolling */
+	background-repeat: no-repeat; /* Prevent the background from repeating */
+	color: #fff; /* Optional: Change text color for contrast */
+}
+
+header {
+	background-color: beige;
+	color: white;
+	padding: 10px 0;
+	text-align: center;
+}
+
+	header nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+	}
+
+		header nav ul li {
+			margin: 0 20px;
+		}
+
+			header nav ul li a {
+				color: white;
+				text-decoration: none;
+			}
+
+main {
+	padding: 20px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
+	padding: 20px; /* Add padding around the content */
+	border-radius: 10px; /* Optional: Rounded corners for content section */
+	color: #fff; /* Text color for the main content */
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.rounded-circle {
+	border-radius: 50%;
+}
+h1 {
+	color: black;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+	header nav ul {
+		flex-direction: column;
+	}
+
+	main {
+		padding: 10px;
+	}
+
+	h1, h2, h3 {
+		font-size: 1.5em;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/* Media Query for Tablets */
+@media (max-width: 1024px) {
+	header nav ul {
+		flex-direction: row;
+	}
+
+	main {
+		padding: 15px;
+	}
+
+	h1, h2, h3 {
+		font-size: 2em;
+	}
+
+	img {
+		max-width: 80%;
+	}
+}
+/* CSS for styling the profile picture */
+.profile-pic {
+	width: 150px; /* Adjust the width to your liking */
+	height: auto; /* Maintain the aspect ratio */
+	border-radius: 50%; /* Make the image circular */
+	display: block;
+	margin: 20px auto; /* Center the image */
+	border: 5px solid #fff; /* Add a white border around the profile picture */
+	border-radius: 50%; /* Make the image circular */
+	max-width: 200px; /* Set a maximum width */
+	height: auto; /* Keep the aspect ratio */
+}
+.overlay-section {
+	position: relative; /* Positioning context for pseudo-element */
+	color: white; /* Text color */
+	padding: 20px;
+}
+
+	.overlay-section::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('images/overlay-background.jpg'); /* Path to your background image */
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0.5; /* Adjust the opacity for the overlay effect */
+		z-index: -1; /* Places the overlay behind content */
+	}
+
+/*.background-section {
+	background-image: url('../images/pink purple gradient minimalist opening youtube intro.gif');
+	background-size: cover;*/ /* Ensures the image covers the entire element */
+	/*background-position: center;*/ /* Centers the image */
+	/*background-repeat: no-repeat;*/ /* Prevents the image from repeating */
+	/*padding: 20px;*/ /* Adds some padding */
+	/*color: white;*/ /* Adjust text color if needed */
+	/*max-width: 100%;
+	height: auto;
+	border-radius: 8px;*/ /* Optional: Adds rounded corners */
+	/*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/ /* Optional: Adds a subtle shadow */
+/*}*/
+
+
+/* Background Section Styling */
+.background-section {
+	
+	background-image: url('../images/pink purple gradient minimalist opening youtube intro.gif');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+	padding: 100px 0;
+	z-index: 1;
+}
+
+	/* Blurred Background */
+	.background-section::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: inherit;
+		background-size: cover;
+		background-position: center;
+		filter: blur(3px); /* Adjust the blur level here */
+		z-index: -1;
+		opacity: 0.3; /* Adjust the opacity for the blur effect */
+	}
+.blurred-container {
+	background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+	backdrop-filter: blur(3px); /* Blurred background effect */
+	-webkit-backdrop-filter: blur(3px); /* Safari support */
+	border-radius: 10px;
+	padding: 10px;
+}
+
+/* White Box for Text Content */
+.text-container {
+	background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+	padding: 70px;
+	border-radius: 10px; /* Optional: Rounded corners */
+	max-width: 800px; /* Optional: Adjust width as needed */
+	margin: 0 auto; /* Centering the box */
+	color: black; /* Black text color */
+}
+
+/* Content Styling */
+.background-section h1, .background-section p {
+	margin: 0;
+}
+
+.background-section p {
+	color: #111111; /* Darker text color */
+}
+.background-section p,
+.background-section li,
+.background-section h2,
+.background-section h3 {
+	text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8); /* Optional: Slight shadow for readability */
+}
+ul.list-unstyled {
+	color: black; /* Set list text to black */
+}
+h2, h3 {
+	color: black; /* Set headings to black */
+}
+
+body header nav ul li {
+	scroll-behavior: smooth;
+}
+
